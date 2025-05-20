@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Last of Us - Special Screening</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: multiply;
+            padding-top: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            display: flex; /* Added */
+            flex-direction: column; /* Added */
+        }
+         .hero h2{
+            margin-left: 0;
+        }
+        .hero p{
+            margin-left: 0;
+        }
+        .hero-image { /* Added */
+            order: 2; /* Image goes second */
+            margin-top: 2rem;
+            margin-right: 0;
+            max-width: 100%;
+        }
+        .hero-text { /* Added */
+            order: 1; /* Text goes first */
+        }
+
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 bg-opacity-75 backdrop-blur-md py-4 px-6 sticky top-0 z-10 border-b border-amber-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold text-amber-400">Mehmet's Cinematic Haven</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#event" class="text-gray-300 hover:text-white transition-colors duration-300">The Event</a></li>
+                    <li><a href="#details" class="text-gray-300 hover:text-white transition-colors duration-300">Details</a></li>
+                    <li><a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="event" class="hero  text-center py-20 px-4">
+            <div class="container mx-auto">
+                <div class = "hero-text">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold text-amber-400 mb-4">The Last of Us</h2>
+                    <p class="text-lg sm:text-xl text-gray-300 mb-8 max-w-3xl mx-auto ">
+                        Experience the epic journey of The Last of Us at a special screening event.  Join us for an unforgettable night of suspense, drama, and incredible storytelling.
+                    </p>
+                    <a href="#details" class="bg-amber-500 hover:bg-amber-600 text-black font-semibold py-3 px-6 rounded-full transition-colors duration-300 text-lg sm:text-xl">
+                        Get Your (Free) Ticket
+                    </a>
+                </div>
+                <div class = "hero-image">
+                    <img src="https://assets-prd.ignimgs.com/2022/11/30/tlou-hbo-ellie-1669832712391.jpg" alt="The Last of Us" style="max-width: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="bg-gray-800 py-16 px-4">
+            <div class="container mx-auto text-center">
+                <h3 class="text-3xl sm:text-4xl font-semibold text-amber-400 mb-8">Screening Details</h3>
+                <div class="bg-gray-700 rounded-lg shadow-lg p-6 sm:p-10 max-w-2xl mx-auto">
+                    <p class="text-lg text-gray-200 mb-4"><span class="font-semibold text-white">Date:</span> Friday, May 26th</p>
+                    <p class="text-lg text-gray-200 mb-4"><span class="font-semibold text-white">Time:</span> 7:00 PM Sharp</p>
+                    <p class="text-lg text-gray-200 mb-4"><span class="font-semibold text-white">Location:</span> Mehmet's Humble House</p>
+                    <p class="text-lg text-gray-200">
+                        Prepare for an immersive viewing experience.  Free popcorn and a great atmosphere!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-gradient-to-br from-black via-gray-900 to-black py-16 px-4 text-center">
+            <div class="container mx-auto">
+                <h3 class="text-3xl sm:text-4xl font-semibold text-amber-400 mb-8">About Your Host</h3>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    Mehmet is a huge fan of The Last of Us and is excited to share this experience with fellow fans.
+                    This is a casual get-together to enjoy great storytelling in a relaxed setting.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-4 text-center border-t border-amber-800">
+        <p>&copy; 2025 Mehmet's Cinematic Haven. All rights reserved.  Not an official movie theater.</p>
+    </footer>
+</body>
+</html>

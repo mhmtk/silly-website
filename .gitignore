@@ -1,0 +1,44 @@
+# Example .gitignore file for a typical website project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node.js dependencies (if you use them)
+node_modules/
+
+# Package manager lock files (if you use them)
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.log
+tmp/
+temp/
+*.tmp
+
+# IDE specific files
+.idea/
+.vscode/
+*.suo
+*.swp
+*.swo
+
+# Local environment files
+.env
+.env.*
+!/.env.example
+
+# Uploaded files
+/uploads
+
+# Cache directories
+/cache
+/out
+/build
+/dist
+
+# Ignore all files in the uploads directory,
+# except for the .gitkeep file.
+/uploads/*
+!/uploads/.gitkeep
